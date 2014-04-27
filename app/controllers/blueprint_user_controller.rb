@@ -1,0 +1,2 @@
+class BlueprintUserController < ApplicationController
+end
