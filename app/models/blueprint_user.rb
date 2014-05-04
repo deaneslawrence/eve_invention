@@ -1,4 +1,4 @@
 class BlueprintUser < ActiveRecord::Base
-	belongs_to :users
-	belongs_to :blueprints
+  belongs_to :blueprint
+  belongs_to :user
 end

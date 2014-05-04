@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Blueprint:</strong>
+  <%= @blueprint_user.blueprint_id %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @blueprint_user.user_id %>
+</p>
+
+<p>
+  <strong>Preferred decryptor:</strong>
+  <%= @blueprint_user.preferred_decryptor %>
+</p>
+
+<%= link_to 'Edit', edit_blueprint_user_path(@blueprint_user) %> |
+<%= link_to 'Back', blueprint_users_path %>

@@ -1,7 +1,15 @@
 EveInvention::Application.routes.draw do
-  resources :blueprints
+  get "users/new"
+
+  root  'static_pages#home'
+  match '/signup',  to: 'users#new',            via: 'get'
+  match '/help',    to: 'static_pages#help',    via: 'get'
+
+  resources :blueprint_users
 
   resources :users
+
+  resources :blueprints
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
