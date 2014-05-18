@@ -1,5 +1,5 @@
-<p id="notice"><%= notice %></p>
-
+<% provide(:title, @user.eve_key) %>
+<%= gravatar_for @user %>
 <p>
   <strong>Eve key:</strong>
   <%= @user.eve_key %>
