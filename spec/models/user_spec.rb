@@ -2,8 +2,8 @@ require 'spec_helper'
 
 describe User do
 
-  before do 
-  	@user = User.new(eve_key: "654321", email: "user@example.com",
+  before do
+    @user = User.new(eve_key: "Example User", email: "user@example.com",
                      password: "foobar", password_confirmation: "foobar")
   end
 
@@ -84,7 +84,7 @@ describe User do
     it { should_not be_valid }
   end
 
-   describe "with a password that's too short" do
+  describe "with a password that's too short" do
     before { @user.password = @user.password_confirmation = "a" * 5 }
     it { should be_invalid }
   end

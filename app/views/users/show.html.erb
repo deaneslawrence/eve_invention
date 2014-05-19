@@ -1,14 +1,11 @@
 <% provide(:title, @user.eve_key) %>
-<%= gravatar_for @user %>
-<p>
-  <strong>Eve key:</strong>
-  <%= @user.eve_key %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<div class="row">
+  <aside class="span4">
+    <section>
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.eve_key %>
+      </h1>
+    </section>
+  </aside>
+</div>
