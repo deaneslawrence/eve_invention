@@ -1,9 +1,0 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  eve_key: MyString
-  email: MyString
-
-two:
-  eve_key: MyString
-  email: MyString
